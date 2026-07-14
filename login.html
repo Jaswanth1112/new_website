@@ -1,1 +1,135 @@
-this is master branch
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f0f2f5;
+      color: #1c1e21;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .left {
+      flex: 1;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 60px;
+      font-weight: bold;
+      color: #1877f2;
+      margin-bottom: 10px;
+    }
+
+    .left h2 {
+      font-size: 28px;
+      font-weight: normal;
+      margin: 0 0 20px;
+      line-height: 1.2;
+    }
+
+    .card {
+      background: #fff;
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .card input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 12px;
+      border: 1px solid #dddfe2;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .btn-login {
+      background: #1877f2;
+      color: #fff;
+    }
+
+    .btn-create {
+      background: #42b72a;
+      color: #fff;
+      width: auto;
+      display: block;
+      margin: 15px auto 0;
+      padding: 12px 18px;
+    }
+
+    .link {
+      display: block;
+      text-align: center;
+      margin: 12px 0;
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .divider {
+      border-top: 1px solid #dddfe2;
+      margin: 16px 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .left {
+        padding-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="logo">facebook</div>
+      <h2>Connect with friends and the world around you on Facebook.</h2>
+    </div>
+
+    <div class="card">
+      <form>
+        <input type="text" placeholder="Email or phone number" />
+        <input type="password" placeholder="Password" />
+        <button class="btn btn-login" type="submit">Log In</button>
+        <a href="#" class="link">Forgot password?</a>
+        <div class="divider"></div>
+        <button class="btn btn-create" type="button">Create new account</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
